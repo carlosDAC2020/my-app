@@ -1,0 +1,7 @@
+@if (!isLogin) {
+    <app-login-form (isLogin)="isLogin=$event"/>
+}
+@else {
+    <app-home/>
+}
+

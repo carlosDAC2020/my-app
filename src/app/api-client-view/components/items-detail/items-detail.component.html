@@ -1,0 +1,18 @@
+
+  
+<div class="container col-xxl-8 p-4 p-3 capa mt-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="{{itemSelected.hdurl}}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">{{itemSelected.title}}</h1>
+        <h3>{{itemSelected.date}} | {{itemSelected.copyright}}</h3>
+        <p class="lead">{{itemSelected.explanation}}.</p>
+      </div>
+    </div>
+    <button 
+    class="btn p-2 "
+    (click)="retunrFilter()"
+    >regresar</button>
+  </div>

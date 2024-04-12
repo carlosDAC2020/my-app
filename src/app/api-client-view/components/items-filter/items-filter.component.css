@@ -1,0 +1,45 @@
+.key_word{
+    font-size: 17px;
+}
+
+.cant{
+    background-color: #8d1fc549;  
+    border-radius: 50%;
+    color: aliceblue;
+}
+.word{
+    border-bottom:2px solid #9c0ae6;  
+}
+
+.card{
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
+    background-position: center; 
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Establece el box-shadow inicial */
+    transition: box-shadow 0.3s ease; /* Agrega una transición suave de 0.3 segundos */
+}
+.card:hover, .form-control:hover{
+    border:2px solid #9c0ae6;  
+    box-shadow: 0 0 20px rgba(164, 64, 226, 0.566);
+}
+
+.btn_reload{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.0) ;
+    font-size: 50px;
+    border:0px;  
+    color: #9c0ae6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Establece el box-shadow inicial */
+    transition: box-shadow 0.3s ease; /* Agrega una transición suave de 0.3 segundos */
+}
+.btn_reload:hover{
+    border:2px solid #9c0ae6;  
+    box-shadow: 0 0 20px rgba(164, 64, 226, 0.566);
+    transform: rotate(720deg); 
+    transition: transform 1s ease; 
+}
+
+
+/* estilos para el scroll */

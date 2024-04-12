@@ -1,6 +1,19 @@
-# MyApp
+# ciclo de desarroollo simpel-app
+- generacion del proyecto con el comando `ng new name-app`
+- instalacion de dependencias ejemplo bootstrap con `npm install bootstrap jquery popper.js` 
+- si solo se usa css no hay nesecidad de instalae `jquery popper.js` al instalrlo pon `./node_modules/bootstrap/dist/css/bootstrap.min.css` en los styles del archivo angular.json
+- añade los js de bootstrap tambien en los scripts de angular.json en el siguiente orden 
+    `./node_modules/jquery/dist/jquery.min.js` 
+    `node_modules/popper.js/dist/umd/popper.min.js`
+    `./node_modules/bootstrap/dist/js/bootstrap.min.js` 
+- agregamos `@import ../node_modules/bootstrap/dist/css/bootstrap.min.css` ; al style.css dd la caroeta src
+- ya podriasmos correr nuestro proyecto con `ng serve`
+- maquetamos los componetes 
+- declarmos los modelos de datos como clases usando por ejemplo `ng g cl models/employee` para crear una clase empleado
+- importa import { CommonModule } from '@angular/common'; para poder hacer uso de directvas en los componentes 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+
+# comandos basicos 
 
 ## Development server
 

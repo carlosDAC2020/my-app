@@ -1,0 +1,36 @@
+.navbar{
+    background-color: black;
+}
+.navbar-logo {
+    width: 50px; /* ajusta el tamaño según tus necesidades */
+}
+.container-fluid {
+    display: flex;
+    align-items: center;
+}
+.navbar-brand {
+    margin-right: 10px; /* ajusta el margen según tus necesidades */
+}
+
+.lk_basic:hover {
+    border-bottom:2px solid #dc2430;
+    color: #dc2430;
+}
+
+.lk_api:hover {
+    border-bottom:2px solid #9c0ae6;  
+    color: #11998e;
+}
+
+.lk_login:hover {
+    border-bottom:2px solid #00F260;  
+    color: #00F260;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
