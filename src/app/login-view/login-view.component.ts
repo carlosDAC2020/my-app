@@ -5,6 +5,9 @@ import { Renderer2 } from '@angular/core';
 import {LoginFormComponent} from './componentes/login-form/login-form.component'
 import {HomeComponent} from './componentes/home/home.component'
 
+// models
+import {User} from '../models/user'
+
 @Component({
   selector: 'app-login-view',
   standalone: true,
@@ -24,5 +27,9 @@ export class LoginViewComponent {
     this.renderer.removeClass(document.body, 'login-view-background');
   }
 
+  // propiedades
   isLogin: boolean=false;
+  token: string="";
+  userLogged: User= new User();
+
 }

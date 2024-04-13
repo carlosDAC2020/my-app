@@ -1,7 +1,14 @@
 @if (!isLogin) {
-    <app-login-form (isLogin)="isLogin=$event"/>
+    <app-login-form 
+    (isLogin)="isLogin=$event"
+    (userLogged)="userLogged=$event"
+    (token)="token"
+    />
 }
 @else {
-    <app-home/>
+    <app-home 
+    [token]="token"
+    [userLogged]="userLogged"
+    />
 }
 

@@ -1,15 +1,15 @@
 <div class="row align-items-md-stretch p-2">
   <!-- Formulafio de adicion de empleados -->
-  <div class="col-md-4">
-      <div class="h-100 w-80 p-4 text-bg-dark rounded-3">
+  <div class="col ">
+      <div class="h-100 w-50 formlogin p-4 text-bg-dark rounded-3">
       <h2>{{ isRegister ? 'Register' : 'Login' }} </h2>
       <form class="mt-3 w-70" action="" method="post">
-          
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Username</label>
             <input 
             [(ngModel)]="userReference.username"
-            type="text" class="form-control  bg-secondary text-white border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="User1">
+            name="username"
+            type="text" class="form-control  bg-secondary text-white border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="User1" required>
           </div>
           <div 
             *ngIf="isRegister"
@@ -17,7 +17,8 @@
             <label for="exampleInputEmail1" class="form-label">first Name</label>
             <input 
             [(ngModel)]="userReference.first_name"
-            type="text" class="form-control  bg-secondary text-white border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Pepito">
+            name="first_name"
+            type="text" class="form-control  bg-secondary text-white border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Pepito" required>
           </div>
           <div 
             *ngIf="isRegister"
@@ -25,42 +26,32 @@
             <label for="exampleInputEmail1" class="form-label">Last Name</label>
             <input 
             [(ngModel)]="userReference.last_name"
-            type="text" class="form-control  bg-secondary text-white border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Perez">
+            name="last_name"
+            type="text" class="form-control  bg-secondary text-white border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Perez" required>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
             <input 
             [(ngModel)]="userReference.password"
-            type="password" class="form-control  bg-secondary text-white border-0" id="exampleInputPassword1">
+            name="password"
+            type="password" class="form-control  bg-secondary text-white border-0" id="exampleInputPassword1" required>
           </div>
           
           <button 
+          *ngIf="!isRegister"
           (click)="login()"
-          type="button" class="btn btn-primary border-0 ">
+          type="button" class="btn  border-0 btnlogin">
           login
           </button>
           <button 
           (click)="register()"
-          type="button" class="btn border-0 btn_delete text-white m-2">
+          type="button" class="btn border-0 btn-primary text-white m-2">
           Register
           </button>
 
       </form>
       </div>
   </div>
-
-  <!-- filtro de busqueda de empleados -->
-  <div class="col-md-8">
-      <div class="h-100 w-80  p-4 text-bg-dark rounded-3">
-      <h2>Users Register</h2>
-      
-
-      <div class="row row-cols-1 row-cols-lg-2 align-items-stretch  p-4 w-70">
-          
-      </div>
-      </div>
-  </div>
-
 </div> 
     
         
