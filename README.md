@@ -5,10 +5,11 @@ Es tas partes son:
 
 ## Basic:
 Repaso de conceptos muy basicos de angular realizando un CDRUD basico.
+
 ![Basic](/src/assets/basic.PNG)
  los conceptos aplicados son:
 - manejo de mocelos desde su creacion, importacion y manupulacion en componentes.
-- uso de dorectivas y eventos para manejar el flujo en q se muestra la informacion en un componente
+- uso de dorectivas, eventos y doble enlace de datos para manejar el flujo en q se muestra la informacion en un componente
 
 ## Api-Client
 En esta sección, nos conectamos a la API de la NASA para obtener datos externos y mostrarlos en nuestra interfaz. 
@@ -31,4 +32,11 @@ Algunos de los conceptos implementados fueron:
 ![Auth](/src/assets/login.PNG)
 ![Auth](/src/assets/home.PNG)
 
+## Generalidades
+- se uso enrutado para mostrar cada parte por ejemplo una url para la vista basic ptra para el api client y otra para la vista de login 
+- uso de servicio tanto para las peticiones de la NASA como a la api de django 
+
+## observaciones y mejoras
+- Implementar la carga de componentes de forma diferida (lazy loading) para mejorar el rendimiento de la aplicación, especialmente en aplicaciones grandes.
+- Utilizar la asincronía al hacer peticiones a las APIs para mejorar la experiencia del uskj Mejorar la abstracción de los componentes para una mejor organización del código, utilizando patrones como componentes reutilizables y la separación de responsabilidades.
 
