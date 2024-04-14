@@ -1,8 +1,9 @@
+
 @if (!isLogin) {
     <app-login-form 
     (isLogin)="isLogin=$event"
     (userLogged)="userLogged=$event"
-    (token)="token"
+    (token)="token=$event"
     />
 }
 @else {

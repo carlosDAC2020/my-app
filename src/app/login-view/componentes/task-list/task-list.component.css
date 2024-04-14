@@ -1,0 +1,8 @@
+.btn{
+    background: #0cc854; 
+}
+
+.selected, .item_employe:hover{
+    background: #1b4b1578;  /* fallback for old browsers */
+    border: 3px solid #2bf01d;
+}
