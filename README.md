@@ -14,6 +14,7 @@ Repaso de conceptos muy basicos de angular realizando un CDRUD basico.
 ## Api-Client
 En esta sección, nos conectamos a la API de la NASA para obtener datos externos y mostrarlos en nuestra interfaz. 
 ![Api-client](/src/assets/apiclient1.PNG)
+
 Algunos de los conceptos implementados fueron:
 
 - Uso de peticiones HTTP para obtener información externa y mostrarla en la interfaz.
